@@ -1,7 +1,7 @@
 # nuvi_interview
 aggregate news data and publish to Redis
 
-Requirements
+# Requirements
 This URL (http://bitly.com/nuvi-plz) is an http folder containing a list of zip files. Each zip file contains a bunch of xml files. Each xml file contains 1 news report.
 
 Your application needs to download all of the zip files, extract out the xml files, and publish the content of each xml file to a redis list called “NEWS_XML”.
