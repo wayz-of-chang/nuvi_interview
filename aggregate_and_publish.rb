@@ -138,8 +138,6 @@ puts "Starting processing."
 @uri = resolve_url(@uri)
 @file_list = generate_file_list(@uri) unless has_error?
 
-@file_list = @file_list[0...10]
-
 @file_list.each do |file|
   next if file_already_processed?(file)
   download_file(@uri, file) 
